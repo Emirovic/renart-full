@@ -6,7 +6,6 @@ import ProductFilter from './ProductFilter';
 import './ProductList.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { mockProducts } from '../data/mockProducts';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
