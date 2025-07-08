@@ -6,6 +6,7 @@ import ProductFilter from './ProductFilter';
 import './ProductList.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { mockProducts } from '../data/mockProducts';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -22,12 +23,7 @@ const ProductList = () => {
       setLoading(true);
       // Try multiple API endpoints
       const endpoints = [
-        'https://renart-product-api.onrender.com/api/products', // Production API
-        'http://localhost:5278/api/products',
-        'https://localhost:5001/api/products',
-        'http://localhost:5000/api/products',
-        'https://localhost:7001/api/products',
-        'http://localhost:7000/api/products'
+        'https://renart-full.onrender.com/api/products'
       ];
       let response = null;
       let lastError = null;
