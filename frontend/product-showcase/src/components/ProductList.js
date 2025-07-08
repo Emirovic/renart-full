@@ -22,6 +22,7 @@ const ProductList = () => {
       setLoading(true);
       // Try multiple API endpoints
       const endpoints = [
+        'https://renart-product-api.onrender.com/api/products', // Production API
         'http://localhost:5278/api/products',
         'https://localhost:5001/api/products',
         'http://localhost:5000/api/products',
